@@ -1,0 +1,32 @@
+{
+  "baseModel": "gpt2",
+  "seed": "Random",
+  "huggingFaceId": "wikitext",
+  "fineTuningType": "text-generation",
+  "suffix": "Gpt-2-beta",
+  "numberOfEpochs": "8",
+  "userId": "dZhabDtALkOxnJYluQUrCBvRrGd2",
+  "batchSizeAuto": "false",
+  "numberOfEpochsAuto": "false",
+  "validationDataOption": "uploadNew",
+  "trainingDataOption": "selectExisting",
+  "validationCriteria": "",
+  "learningRateMultiplier": "0.5",
+  "expectedOutcome": "jhghffjgfgh",
+  "learningRateAuto": "false",
+  "batchSize": "8",
+  "status": "pending",
+  "createdAt": {
+    "_seconds": 1714035158,
+    "_nanoseconds": 775000000
+  },
+  "scriptPath": "scripts/7Mxxz2WuGdM1Hw5aqG9p/2024-04-25T08-52-38.899Z-script.py",
+  "validationFilePath": "validation/7Mxxz2WuGdM1Hw5aqG9p/top_performers.csv",
+  "trainingFilePath": "",
+  "scriptUrl": [
+    "https://storage.googleapis.com/echo-fe663.appspot.com/scripts/7Mxxz2WuGdM1Hw5aqG9p/2024-04-25T08-52-38.899Z-script.py?GoogleAccessId=firebase-adminsdk-x8w53%40echo-fe663.iam.gserviceaccount.com&Expires=16447006800&Signature=EQHG1Vzfm7I%2FdiA8pTQszTxZ6Vkhe7aaYX46forPai7x2%2BsA6ozI1f3FcRwExiBEzrqj%2BRK72fVSeOQ%2F6IP%2Bhv7hjE5XZFWPqkwnVUrJLIw8NVbUGAOCsW70oDYRXjdIvvn5XF%2BE5%2Bzf9R0tr%2Bttzr1cU%2BgEKHltNfCD%2Ft1kFF3T0%2FD5pjlH%2BVtxs2F9d9PdNrhrwD2K3EotDzIr9jBR2RGASceUKPJ4oy1Rdvi7zCyhLuFmjXJJMkfp3wOSo7vJXZV89%2F%2FGRRvMjFUtzoDxJjx2wHlgAiTZc6WKDuLFeSbOBFnt46KqjXXpAzUHafxyQtfILbUtCkr%2FLBIt5LHiFw%3D%3D"
+  ],
+  "validationFileUrl": [
+    "https://storage.googleapis.com/echo-fe663.appspot.com/validation/7Mxxz2WuGdM1Hw5aqG9p/top_performers.csv?GoogleAccessId=firebase-adminsdk-x8w53%40echo-fe663.iam.gserviceaccount.com&Expires=16447006800&Signature=ssPZtYKkuSWxZQu2v6tF21N1tS10DippNOawFlGlnUd%2F1%2BIyj48oSXj%2FM9MROIwN7F5erI0Gt7YqL9d6MbPjRSgfs8rE%2FkiNJr%2BDsbtmeyYtpRSODUxckpZ7u3TWWQwMmy4R%2F2KhdJAfZQEDb52F%2FtKZtJGY8nuz2UGUpbu1C1e6%2BAWfAKq1fIqS69u8mEtuvzLKVxYrmAh9P1Lqb9nZiXtYBYT6LjooHHoVD6xOjpSi4bTKVkAqI2SBVVfowvOLi9V2fAvfTlXqjQZMf6xfbOVEcpRUqd5dCWzx9dIV1PhYXCWoMcfcYDfXlYA8LLz6wk4WVA1ZH8WC7V7%2FkNvdwA%3D%3D"
+  ]
+}

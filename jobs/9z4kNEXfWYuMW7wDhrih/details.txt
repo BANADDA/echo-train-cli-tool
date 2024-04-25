@@ -1,0 +1,34 @@
+{
+  "baseModel": "gpt4",
+  "seed": "Random",
+  "huggingFaceId": "wikitext",
+  "fineTuningType": "text-generation",
+  "suffix": "gpt-trainer",
+  "numberOfEpochs": "20",
+  "batchSizeAuto": "false",
+  "numberOfEpochsAuto": "false",
+  "validationDataOption": "uploadNew",
+  "trainingDataOption": "uploadNew",
+  "validationCriteria": "",
+  "learningRateMultiplier": "0.5",
+  "expectedOutcome": "nfjdsfsdgsdgfss",
+  "learningRateAuto": "false",
+  "batchSize": "22",
+  "status": "pending",
+  "createdAt": {
+    "_seconds": 1714033653,
+    "_nanoseconds": 918000000
+  },
+  "scriptPath": "scripts/9z4kNEXfWYuMW7wDhrih/2024-04-25T08-27-34.051Z-script.py",
+  "validationFilePath": "validation/9z4kNEXfWYuMW7wDhrih/Luganda (1) (1) (1).xlsx",
+  "trainingFilePath": "training/9z4kNEXfWYuMW7wDhrih/Data sources.xlsx",
+  "scriptUrl": [
+    "https://storage.googleapis.com/echo-fe663.appspot.com/scripts/9z4kNEXfWYuMW7wDhrih/2024-04-25T08-27-34.051Z-script.py?GoogleAccessId=firebase-adminsdk-x8w53%40echo-fe663.iam.gserviceaccount.com&Expires=16447006800&Signature=Voe69O2sLy6Kzo%2Fbl9614sLbpp%2FJ1brdJ7AiDIWnnFICR01JqiEVD2voGrHV3CleConysyE9fUM7P%2B%2FY0ljGQKcdOXdQfX4bGqbFMRHwGH7DvGPBpAJbSgqg3k%2B0pACrO0feSEP%2Fgrw%2FDlZ2ovbRgisXvaszCkF3t1F7Gk%2BdfGZGpuqC4GBu1qEFPpqMenAeppuFUKoLpmGxhnljUMDQceGlUm5bOoHD9FucBYhwLQ%2F%2BDOyaYbXqTqFQVbpCHibFYcfitZNrqpDe0PDT91rJ7It2SmKCC5WmBv9ZrOBoQ58FudXg6AoSMBbLsyVj9wCRJQT5t8phJenJ22sgya8btQ%3D%3D"
+  ],
+  "trainingFileUrl": [
+    "https://storage.googleapis.com/echo-fe663.appspot.com/training/9z4kNEXfWYuMW7wDhrih/Data%20sources.xlsx?GoogleAccessId=firebase-adminsdk-x8w53%40echo-fe663.iam.gserviceaccount.com&Expires=16447006800&Signature=HWjghVi036qHEfOh4eQgQdfCdPUOIQ9N8I%2Fl1cARRSwwozH4tPTLpDZsfiigsnbF7BooD9GavVUf401cj%2FiavWv0u2GBVan0zjY0DKL7CoCBObYAIXbfyKnVogTnJc5lzER4xJkh6Pm7DtBLlAbRwArbT5vnOYUAMu8MjWW%2B2s9CnDrV9x9j2qaD4hPnRhzzp9cR7RUwh1LSYSqXRpJ4Mkn0ixmGN%2FCHzX6zn%2BWWPlDwWCfUSYlsASvbOiKaATHc6l2pfzfc3wD9cgIcdtGLK%2FlK343bh%2FLtU1Ap%2BEWa3GeMQieEWf%2FEQDURClCaAMFAcf0gkrH5ptRRi963wOF5PQ%3D%3D"
+  ],
+  "validationFileUrl": [
+    "https://storage.googleapis.com/echo-fe663.appspot.com/validation/9z4kNEXfWYuMW7wDhrih/Luganda%20%281%29%20%281%29%20%281%29.xlsx?GoogleAccessId=firebase-adminsdk-x8w53%40echo-fe663.iam.gserviceaccount.com&Expires=16447006800&Signature=j7ncXDcHtxgi18kXQmdhToU5N%2FNX8Cr8eKI%2Fxhv4pjB4elPN9TyltIdYFIKQsdKnK8EjBsGX0QfKSbhPkcafnTTi6ujThFmyF52Tx2anwWJEqXFAQYiiJzQ%2Fam6YzqBtaj1FYiNR%2Bwn6mi8eoEIvdKfEAu3kmtHjXfZj5OVmA4C3ZA03C1otGiH%2B%2BIppqMdoemqV9TKNgNEIWMNHZiVMuqHMORDOeo78oVIonFGGkhsV7XMNlE0mSJEphFuWOl4LU7qlnMY6i%2BKfTEUDu3tlfsoYZ4GUUPN6O33K9A%2BUkvhV353HGVRD7Wr6uCiFcoYKosYr%2BZffO6s9yoRReCSbcg%3D%3D"
+  ]
+}
