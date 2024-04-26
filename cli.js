@@ -162,11 +162,9 @@ const handleFetchJobDetails = async () => {
         console.error('Failed to fetch job details:', error.response?.data?.error || 'Server error');
     }
 };
-
 const start_training = async () => {
     const token = getToken();
     const minerId = getMinerId();
-    console.log('Gotten miner id: ', minerId);
     const systemDetails = await getSystemDetails();
     const { docId } = argv;
     if (!token) {
@@ -209,24 +207,80 @@ const start_training = async () => {
         console.log(`Job details saved to: ${detailsPath}`);
 
         // Download files using the URLs provided
-        if (train_job.scriptUrl) {
-            await downloadFile(train_job.scriptUrl, path.join(jobDir, 'script.py'));
-            console.log(`Script file downloaded to: ${path.join(jobDir, 'script.py')}`);
-        }
-        if (train_job.trainingFileUrl) {
-            await downloadFile(train_job.trainingFileUrl, path.join(jobDir, 'trainingData.xlsx'));
-            console.log(`Training data file downloaded to: ${path.join(jobDir, 'trainingData.xlsx')}`);
-        }
-        if (train_job.validationFileUrl) {
-            await downloadFile(train_job.validationFileUrl, path.join(jobDir, 'validationData.xlsx'));
-            console.log(`Validation data file downloaded to: ${path.join(jobDir, 'validationData.xlsx')}`);
-        }
+        await downloadFile(train_job.scriptUrl, path.join(jobDir, 'script.py'));
+        await downloadFile(train_job.trainingFileUrl, path.join(jobDir, 'trainingData.xlsx'));
+        await downloadFile(train_job.validationFileUrl, path.join(jobDir, 'validationData.xlsx'));
 
         console.log(`Training job fetched successfully. Check directory: ${jobDir}`);
     } catch (error) {
         console.error('Failed to fetch job details:', error.response?.data?.error || error);
     }
 };
+
+// const start_training = async () => {
+//     const token = getToken();
+//     const minerId = getMinerId();
+//     console.log('Gotten miner id: ', minerId);
+//     const systemDetails = await getSystemDetails();
+//     const { docId } = argv;
+//     if (!token) {
+//         console.log('Authentication token not found. Please login first.');
+//         return;
+//     }
+
+//     // Confirmation prompt
+//     const answers = await inquirer.prompt([{
+//         type: 'confirm',
+//         name: 'confirmTraining',
+//         message: 'Starting training will trigger execution of the training job. Do you want to continue?',
+//         default: false
+//     }]);
+
+//     if (!answers.confirmTraining) {
+//         console.log('Training start cancelled.');
+//         return;
+//     }
+
+//     try {
+//         const response = await axios.post(`${apiUrl}/start-training/${docId}`, {
+//             systemDetails,
+//             minerId
+//         }, {
+//             headers: { Authorization: `Bearer ${token}`, 
+//             'X-Miner-ID': minerId  }
+//         });
+//         const train_job = response.data;
+//         console.log('Job details fetched successfully. See details below:');
+//         console.log(train_job);
+
+//         const jobDir = path.join(__dirname, 'jobs', docId);
+//         if (!fs.existsSync(jobDir)) {
+//             fs.mkdirSync(jobDir, { recursive: true });
+//         }
+
+//         const detailsPath = path.join(jobDir, 'details.txt');
+//         fs.writeFileSync(detailsPath, JSON.stringify(train_job, null, 2));
+//         console.log(`Job details saved to: ${detailsPath}`);
+
+//         // Download files using the URLs provided
+//         if (train_job.scriptUrl) {
+//             await downloadFile(train_job.scriptUrl, path.join(jobDir, 'script.py'));
+//             console.log(`Script file downloaded to: ${path.join(jobDir, 'script.py')}`);
+//         }
+//         if (train_job.trainingFileUrl) {
+//             await downloadFile(train_job.trainingFileUrl, path.join(jobDir, 'trainingData.xlsx'));
+//             console.log(`Training data file downloaded to: ${path.join(jobDir, 'trainingData.xlsx')}`);
+//         }
+//         if (train_job.validationFileUrl) {
+//             await downloadFile(train_job.validationFileUrl, path.join(jobDir, 'validationData.xlsx'));
+//             console.log(`Validation data file downloaded to: ${path.join(jobDir, 'validationData.xlsx')}`);
+//         }
+
+//         console.log(`Training job fetched successfully. Check directory: ${jobDir}`);
+//     } catch (error) {
+//         console.error('Failed to fetch job details:', error.response?.data?.error || error);
+//     }
+// };
 
 
 const downloadFile = async (fileUrl, outputPath) => {
