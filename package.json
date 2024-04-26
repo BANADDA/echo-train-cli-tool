@@ -1,5 +1,5 @@
 {
-  "name": "my-cli-tool",
+  "name": "echo-cli-tool",
   "version": "1.0.0",
   "description": "A simple CLI tool for managing operations",
   "main": "cli.js",
@@ -8,14 +8,21 @@
     "login": "node ./cli.js -c login",
     "register": "node ./cli.js -c register-miner",
     "pending-jobs": "node ./cli.js -c fetch-pending-jobs",
-    "job-details": "node ./cli.js -c fetch-job-details"
+    "job-details": "node ./cli.js -c fetch-job-details",
+    "start-training": "node ./cli.js -c train-jobs"
   },
-  "keywords": ["cli", "tool", "management"],
+  "keywords": [
+    "cli",
+    "tool",
+    "management"
+  ],
   "author": "Mubaraka Banadda",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",
+    "inquirer": "^9.2.19",
+    "systeminformation": "^5.22.7",
     "yargs": "^17.7.2"
   }
 }
