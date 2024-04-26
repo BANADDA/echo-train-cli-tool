@@ -19,18 +19,18 @@ To install Echo Train CLI:
 ```bash
 npm install -g echo-cli-tool
 
-Configuration
--------------
+## Configuration
 
 Before using the CLI, you need to set up the following environment variables:
 
--   `API_URL`: The URL of the Echo platform API.
--   Other required variables for authentication, such as `USERNAME`, `PASSWORD`, or `TOKEN`.
+- `API_URL`: The URL of the Echo platform API.
+- Other required variables for authentication, such as `USERNAME`, `PASSWORD`, or `TOKEN`.
 
 You can set these environment variables in your shell configuration file (e.g., `.bashrc`, `.bash_profile`, `.zshrc`, or similar) or create a `.env` file in the project directory.
 
-Example .env file:
+### Example `.env` file:
 
+```plaintext
 API_URL=https://example.com/api
 USERNAME=your_username
 PASSWORD=your_password
