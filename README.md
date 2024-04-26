@@ -16,7 +16,7 @@ Echo Train CLI is a command-line tool designed for managing training jobs on the
 - npm
 
 To install Echo Train CLI:
-```bash
+
 npm install -g echo-cli-tool
 
 # Configuration
