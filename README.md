@@ -30,7 +30,7 @@ You can set these environment variables in your shell configuration file (e.g., 
 
 ### Example `.env` file:
 
-```plaintext
+
 API_URL=https://example.com/api
 USERNAME=your_username
 PASSWORD=your_password
