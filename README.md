@@ -19,7 +19,7 @@ To install Echo Train CLI:
 ```bash
 npm install -g echo-cli-tool
 
-## Configuration
+# Configuration
 
 Before using the CLI, you need to set up the following environment variables:
 
@@ -35,7 +35,7 @@ API_URL=https://example.com/api
 USERNAME=your_username
 PASSWORD=your_password
 
-Usage
+# Usage
 -----
 
 The Echo Train CLI provides the following commands:
@@ -47,15 +47,15 @@ The Echo Train CLI provides the following commands:
 -   `start-training`: Start a new training job.
 
 ### Example Usage
-#### Login
+## Login
 `echo-cli-tool login -- -u your_username -p your_password`
-#### Register Miner
+## Register Miner
 `echo-cli-tool register -- -e your_ethereum_address -u your_username -email your_email`
-#### Fetch Pending Jobs
+## Fetch Pending Jobs
 `echo-cli-tool pending-jobs`
-#### Fetch Job Details
+## Fetch Job Details
 `echo-cli-tool job-details -- --docId your_document_id`
-#### Start Training
+## Start Training
 `echo-cli-tool start-training -- --docId your_document_id`
 
 Replace `your_username`, `your_password`, `your_ethereum_address`, `your_email`, and `your_document_id` with your actual credentials and document IDs.
