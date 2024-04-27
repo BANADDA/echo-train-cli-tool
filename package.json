@@ -9,7 +9,10 @@
     "register": "node ./cli.js -c register-miner",
     "pending-jobs": "node ./cli.js -c fetch-pending-jobs",
     "job-details": "node ./cli.js -c fetch-job-details",
-    "start-training": "node ./cli.js -c train-jobs"
+    "start-training": "node ./cli.js -c train-jobs",
+    "edit-script": "node ./cli.js -c edit-script",
+    "execute": "node ./cli.js -c execute",
+    "run-on-runpod": "node ./cli.js -c run-on-runpod --docId <docId>"
   },
   "keywords": [
     "cli",
@@ -22,6 +25,7 @@
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",
     "inquirer": "^9.2.19",
+    "ora": "^8.0.1",
     "systeminformation": "^5.22.7",
     "yargs": "^17.7.2"
   }
